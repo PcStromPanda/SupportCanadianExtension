@@ -1,0 +1,141 @@
+{
+  "manifest_version": 3,
+  "name": "Support Canadian",
+  "version": "1.1.2",
+  "description": "Support Canadian is a free and private browser extension that automatically identifies Canadian products and alternative retail options on popular American shooping sites.",
+  "icons": {
+    "16": "icons/iconOn.png",
+    "48": "icons/iconOn.png",
+    "128": "icons/iconOn.png"
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/iconOn.png"
+  },
+
+  "permissions": [
+    "storage"
+  ],
+  
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "supportcanadian@example.com"
+    }
+  },
+
+  "web_accessible_resources": [
+  {
+    "resources": [
+      "icons/MapleLeafFoods_logo.png",
+      "icons/PresidentsChoice_logo.png",
+      "icons/EDSmith_logo.png",
+      "icons/BiscuitLeclerc_logo.png",
+      "icons/NaturesPath_logo.png",
+      "icons/CoveredBridge_logo.png",
+      "icons/HarvestMeats_logo.png",
+      "icons/NoName_logo.png",
+      "icons/Lassonde_logo.png",
+      "icons/ThePopShoppe_logo.png",
+      "icons/PurdysChocolatier_logo.png",
+      "icons/LauraSecord_logo.png",
+      "icons/ChocolatFavoris_logo.png",
+      "icons/TheGreenBeaverCompany_logo.png",
+      "icons/RockyMountainSoapCo_logo.png",
+      "icons/LiseWatier_logo.png",
+      "icons/BKindCosmetics_logo.png",
+      "icons/LifeBrand_logo.png",
+      "icons/ATTITUDE_logo.png",
+      "icons/ShoppersDrugMart_logo.png",
+      "icons/Rexall_logo.png",
+      "icons/Familiprix_logo.png",
+      "icons/LondonDrugs_logo.png",
+      "icons/PinkSolution_logo.png",
+      "icons/LavoInc_logo.png",
+      "icons/Sapadilla_logo.png",
+      "icons/DishNDuer_logo.png",
+      "icons/Kotn_logo.png",
+      "icons/Rudsak_logo.png",
+      "icons/Tentree_logo.png",
+      "icons/Reitmans_logo.png",
+      "icons/Lululemon_logo.png",
+      "icons/Arcteryx_logo.png",
+      "icons/SportCheck_logo.png",
+      "icons/CanadaWestBoots_logo.png",
+      "icons/CanadaGoose_logo.png",
+      "icons/Cohere_logo.png",
+      "icons/OpenText_logo.png",
+      "icons/CanadaComputers_logo.png",
+      "icons/MemoryExpress_logo.png",
+      "icons/PartSource_logo.png",
+      "icons/CanadianTire_logo.png",
+      "icons/MagnaInternational_logo.png",
+      "icons/Linamar_logo.png",
+      "icons/Martinrea_logo.png",
+      "icons/Loblaw_logo.png",
+      "icons/HudsonsBay_logo.png",
+      "icons/GiantTiger_logo.png",
+      "icons/Sobeys_logo.png",
+      "icons/Metro_logo.png",
+      "icons/HomeHardware_logo.png",
+      "icons/RONA_logo.png",
+      "icons/McMunnNYates_logo.png",
+      "icons/BulkBarn_logo.png",
+      "icons/Harveys_logo.png",
+      "icons/ANWCanada_logo.png",
+      "icons/MrSub_logo.png",
+      "icons/PizzaPizza_logo.png",
+      "icons/MuchoBurrito_logo.png",
+      "icons/SecondCup_logo.png",
+      "icons/TimHortons_logo.png",
+      "icons/BlenzCoffee_logo.png",
+      "icons/LaMaisonSimons_logo.png",
+      "icons/Bouclair_logo.png",
+      "icons/RBC_logo.png",
+      "icons/TD_logo.png",
+      "icons/BMO_logo.png",
+      "icons/CIBC_logo.png",
+      "icons/Scotiabank_logo.png",
+      "icons/Crave_logo.png",
+      "icons/CBCGem_logo.png",
+      "icons/SuperChannel_logo.png",
+      "icons/CanadianClub_logo.png",
+      "icons/AlbertaDistillers_logo.png",
+      "icons/Molson_logo.png",
+      "icons/Moosehead_logo.png",
+      "icons/Petro-Canada_logo.png",
+      "icons/Husky_logo.png",
+      "icons/IrvingOil_logo.png",
+      "icons/Ultramar_logo.png",
+      "icons/Co-opGas_logo.png",
+      "icons/Couche-Tard_logo.png",
+      "icons/TappCar_logo.png",
+      "icons/HOVR_logo.png",
+      "icons/SkipTheDishes_logo.png",
+      "icons/Kijiji_logo.png",
+      "icons/LesPAC_logo.png",
+      "icons/VarageSale_logo.png",
+      "icons/RedTag_logo.png",
+      "icons/AirCanada_logo.png",
+      "icons/WestJet_logo.png",
+      "icons/AirTransat_logo.png",
+      "icons/Porter_logo.png",
+      "icons/CanadianApplianceStore_logo.png",
+      "icons/CaplansAppliances_logo.png",
+      "icons/ApplianceCanada_logo.png",
+      "icons/DanbyAppliances_logo.png",
+      "icons/iconOn.png",
+      "icons/enabledCanada.png",
+      "icons/disabledCanada.png"
+    ],
+    "matches": ["<all_urls>"]
+    }
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"]
+    }
+  ]
+}

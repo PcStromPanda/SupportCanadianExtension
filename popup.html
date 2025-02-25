@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Canadian Redirect Extension</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 10px auto;
+        text-align: center;
+        width: 350px;
+        border-radius: 12px; /* Rounded corners for overall window */
+        background: #fff;
+      }
+      /* Status Icon */
+      #statusIcon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 10px;
+        display: block;
+      }
+      /* Rounded rectangle container for status text (fixed width and centered) */
+      #statusContainer {
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        padding: 10px;
+        margin: 10px auto;
+        width: 250px;
+        box-sizing: border-box;
+      }
+      #statusLabel {
+        font-weight: bold;
+      }
+      #statusText {
+        margin-top: 5px;
+        font-weight: bold;
+      }
+      /* Toggle Button */
+      #toggleBtn {
+        display: inline-block;
+        padding: 6px 10px;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      /* Timer Options Container */
+      #timerOptions {
+        display: none;
+        margin-top: 10px;
+      }
+      #timerOptions p {
+        margin: 0 0 10px 0;
+      }
+      #timerOptions button {
+        padding: 6px 10px;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Minimal Reset Button in Top Right -->
+    <button id="resetBtn" 
+            style="position:absolute; 
+                   top:10px; 
+                   right:10px; 
+                   background:none; 
+                   border:none; 
+                   cursor:pointer; 
+                   font-weight:bold; 
+                   font-size:12px;">
+      Reset
+    </button>
+    
+    <!-- Status Icon -->
+    <img id="statusIcon" src="" alt="Status Icon">
+    
+    <!-- Status Container -->
+    <div id="statusContainer">
+      <div id="statusLabel">Status:</div>
+      <div id="statusText"></div>
+    </div>
+    
+    <!-- Toggle Button -->
+    <button id="toggleBtn">Loading...</button>
+    
+    <!-- Timer Options -->
+    <div id="timerOptions">
+      <p>Select disable duration:</p>
+      <button class="timerOption" data-duration="3">3 Hours</button>
+      <button class="timerOption" data-duration="tomorrow">Till Tomorrow</button>
+      <button class="timerOption" data-duration="week">Next Week</button>
+      <button class="timerOption" data-duration="forever">Forever</button>
+    </div>
+    
+    <script src="popup.js"></script>
+  </body>
+</html>
